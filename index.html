@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA'Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>PaintJS</title>
+    </head>
+    <body>
+        <h1>BoMin's Painting Canvas</h1><br>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class="controls">
+                <div class="controls_range">
+                    <input 
+                        type="range"
+                        id="jsRange"
+                        min="0.1"
+                        max="5"
+                        value="2.5"
+                        step="0.1"
+                    />
+                </div>
+            <div class="controls_btns">
+                <button id="jsMode">Fill</button>
+                <button id="jsSave">Save</button>
+            </div>
+            <div class="controls_colors" id="palette1">
+                <div class="controls_color jsColor" style="background-color: #2c2c2c;"></div>
+                <div class="controls_color jsColor" style="background-color: white;"></div>
+                <div class="controls_color jsColor" style="background-color: #FF3B30;"></div>
+                <div class="controls_color jsColor" style="background-color: #FF9500;"></div>
+                <div class="controls_color jsColor" style="background-color: #FFCC00;"></div>
+                <div class="controls_color jsColor" style="background-color: #4CD963;"></div>
+                <div class="controls_color jsColor" style="background-color: #5AC8FA;"></div>
+                <div class="controls_color jsColor" style="background-color: #0579FF;"></div>
+                <div class="controls_color jsColor" style="background-color: #5856D6;"></div>
+            </div>
+            <div class="controls_colors hidden" id="palette2">
+                <div class="controls_color jsColor" style="background-color: #2c2c2c;"></div>
+                <div class="controls_color jsColor" style="background-color: white;"></div>
+                <div class="controls_color jsColor" style="background-color: #FFC09F;"></div>
+                <div class="controls_color jsColor" style="background-color: #FFEE93;"></div>
+                <div class="controls_color jsColor" style="background-color: #FCF5C7;"></div>
+                <div class="controls_color jsColor" style="background-color: #ADF7B6;"></div>
+                <div class="controls_color jsColor" style="background-color: #A0CED9;"></div>
+                <div class="controls_color jsColor" style="background-color: #95B8D9;"></div>
+                <div class="controls_color jsColor" style="background-color: #DABFDE;"></div>
+            </div>
+            <div class="controls_colors hidden" id="palette3">
+                <div class="controls_color jsColor" style="background-color: #2c2c2c;"></div>
+                <div class="controls_color jsColor" style="background-color: white;"></div>
+                <div class="controls_color jsColor" style="background-color: #2C2C2D;"></div>
+                <div class="controls_color jsColor" style="background-color: #2C2C2E;"></div>
+                <div class="controls_color jsColor" style="background-color: #2C2C2F;"></div>
+                <div class="controls_color jsColor" style="background-color: #2C2C3A;"></div>
+                <div class="controls_color jsColor" style="background-color: #A0CED9;"></div>
+                <div class="controls_color jsColor" style="background-color: #95B8D9;"></div>
+                <div class="controls_color jsColor" style="background-color: #DABFDE;"></div>
+            </div>
+            <div class="palette_btns">
+                <button id="paletteChange">Change Colors</button>
+            </div>
+
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
